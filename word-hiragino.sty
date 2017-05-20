@@ -1,0 +1,18 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{word-hiragino}
+\usepackage{ifluatex}
+\usepackage{ifxetex}
+
+\ifxetex
+  \usepackage[hiragino-pron]{zxjafont}
+  \setmainfont[BoldFont=Hiragino Kak Gothic ProN]{Hiragino Mincho ProN}
+  \setsansfont{Hiragino Kaku Gothic ProN}
+\fi
+
+\ifluatex
+  \setmainjfont[BoldFont=HiraginoKakuGothicProN]{HiraMinoProNW3}
+  \setsansjfont{HiraginoKakuGothicProN}
+\fi
+
+\renewcommand{\rmdefault}{ptm}
+\renewcommand{\sfdefault}{ptm}
