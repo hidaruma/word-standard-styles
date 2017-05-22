@@ -10,8 +10,9 @@
 \fi
 
 \ifluatex
-  \setmainjfont[BoldFont=HiraginoKakuGothicProN]{HiraMinoProNW3}
-  \setsansjfont{HiraginoKakuGothicProN}
+  \usepackage{luatexja-fontspec}
+  \setmainjfont[BoldFont=HiraKakuProNW3]{HiraMinoProNW3}
+  \setsansjfont{HiraKakuProNW6}
 \fi
 
 \renewcommand{\rmdefault}{ptm}
