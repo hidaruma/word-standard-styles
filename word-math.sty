@@ -1,7 +1,10 @@
 \NeedsTeXFormat{LaTeX2e}
 
 \ProvidesPackage{word-math}
-
+\usepackage{ifptex}
+\ifptex
+\else
 \usepackage{unicode-math}
+\fi
 \usepackage{amsmath}
 \usepackage{amssymb}
