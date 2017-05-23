@@ -1,0 +1,15 @@
+\NeedsTeXFormat{LaTeX2e}
+
+\ProvidesPackage{word-pdf}
+
+\usepackage[unicode, hidelinks, bookmarks=true, bookmarksnumberd=true]{hyperref}
+\usepackage{pxjahyper}
+
+\makeatletter
+\AtBeginDocument{
+  \hypersetup{
+	pdftitle = {\@articletitle},
+	pdfauthor = {\@articleauthor}
+  }
+}
+\makeatother
